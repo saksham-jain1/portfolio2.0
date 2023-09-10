@@ -36,10 +36,6 @@ const Sidebar = () => {
         <Icon as={IoPersonCircleOutline} boxSize={7} w="50px" ml="3px" />
         <span>About</span>
       </a>
-      <a href="#academics">
-        <Icon as={FaGraduationCap} boxSize={7} w="50px" ml="3px" />
-        <span>Academics</span>
-      </a>
       <a href="#experince">
         <Icon
           as={AiOutlineFundProjectionScreen}
@@ -48,6 +44,10 @@ const Sidebar = () => {
           ml="3px"
         />
         <span>Experience</span>
+      </a>
+      <a href="#academics">
+        <Icon as={FaGraduationCap} boxSize={7} w="50px" ml="3px" />
+        <span>Academics</span>
       </a>
       <a href="#projetcs">
         <Icon as={IoRocketOutline} boxSize={7} w="50px" ml="3px" />

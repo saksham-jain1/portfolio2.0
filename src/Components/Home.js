@@ -17,7 +17,7 @@ const Home = () => {
     <Flex
       alignItems="center"
       direction="column"
-      pt="10"
+      pt={{ base: "10", md: "4" }}
       w="100%"
       h="100%"
       id="home"

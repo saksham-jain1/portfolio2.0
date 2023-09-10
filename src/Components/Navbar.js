@@ -18,11 +18,12 @@ const Navbar = ({ percentage }) => {
       w="100%"
       bg={colorMode === "light" ? "whiteAlpha.800" : "blackAlpha.700"}
       position="fixed"
+      top="0"
       zIndex={9}
       boxShadow="lg"
       h="80px"
     >
-      <Box h="5px" className="progress" w={percentage +"%"}></Box>
+      <Box h="5px" className="progress" w={percentage + "%"}></Box>
       <Flex justifyContent="space-between" alignItems="center" px="5">
         <Box
           fontSize="1.3rem"

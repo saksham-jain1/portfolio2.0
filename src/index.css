@@ -116,3 +116,23 @@ html {
     transform: rotate(0deg);
   }
 }
+#quote {
+  position: relative;
+  width: max-content;
+  max-width: 100%;
+}
+#quote::after {
+  content: "~ Carlton Fisk";
+  position: absolute;
+  right: 0px;
+}
+
+.dark {
+  color: white;
+}
+
+@media (max-width: 48em) {
+  .dark {
+    color: black;
+  }
+}

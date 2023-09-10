@@ -5,6 +5,8 @@ import { useState } from "react";
 import Sidebar from "./Components/Sidebar";
 import Home from "./Components/Home";
 import About from "./Components/About";
+import Academics from "./Components/Academics";
+import Experience from "./Components/Experience";
 
 function App() {
   const [percentage, setPercentage] = useState(0);
@@ -18,12 +20,14 @@ function App() {
   };
 
   return (
-    <Box w="100vw">
+    <Box w="100vw" position="relative">
       <Navbar percentage={percentage} />
       <Sidebar />
       <Box ml="60px" pt="80px" minH="100vh">
         <Home />
         <About />
+        <Experience />
+        <Academics />
       </Box>
     </Box>
   );
