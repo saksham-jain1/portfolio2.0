@@ -21,11 +21,12 @@ const Sidebar = () => {
       gap={5}
       top="80px"
       h="calc(100vh - 80px)"
-      bg={colorMode === "light" ? "whiteAlpha.100" : "gray.700"}
+      bg={colorMode === "light" ? "white" : "gray.700"}
       justifyContent="center"
       boxShadow="dark-lg"
       _hover={{ w: "210px" }}
       id="sidebar"
+      zIndex="10"
     >
       <a href="#home">
         <Icon as={IoHomeOutline} boxSize={7} w="50px" ml="3px" />
