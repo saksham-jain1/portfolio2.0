@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.progress {
+  background-image: linear-gradient(90deg, #e93d9b 0%, #486ed7 99%);
+}
+
+#toggle {
+  display: block;
+}
+
+#toggle:active > svg {
+  animation: toggle 0.3s ease;
+}
+
+@keyframes toggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+#sidebar > a > span {
+  display: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  overflow: hidden;
+  width: 0px;
+}
+
+#sidebar > a > svg {
+  align-items: center;
+}
+
+#sidebar:hover > a > span {
+  width: 160px;
+  display: inline;
+}
+
+#sidebar:hover > a:hover {
+  border-bottom: 2px solid #486ed7;
+  margin: 0px 10px;
+  color: #486ed7;
+}
+
+#sidebar > a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+}
+
+.active {
+  font-weight: bold;
+  color: #e93d9b;
+}
+
+.waving {
+  display: inline-block;
+  color: #000000;
+  animation-name: wave-animation;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
