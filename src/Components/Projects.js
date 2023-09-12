@@ -1,4 +1,4 @@
-import { Button, Flex, Heading } from "@chakra-ui/react";
+import { Button, Flex, Heading, Icon } from "@chakra-ui/react";
 import React from "react";
 import "../index.css";
 import Card from "./Card";
@@ -18,7 +18,7 @@ const Projects = ({ limit }) => {
         mb="1rem"
         borderBottom="2px solid Black"
         fontSize={{ base: "3rem", md: "4rem" }}
-        mx={{base:"1rem",md:"3rem"}}
+        mx={{ base: "1rem", md: "3rem" }}
       >
         {limit ? "Projects" : "All Projects"}
       </Heading>
@@ -40,7 +40,7 @@ const Projects = ({ limit }) => {
           gap="5"
           size="lg"
         >
-          See More Projects <IoArrowForwardCircle size="30px" />
+          See More Projects <Icon as={IoArrowForwardCircle} boxSize={8} />
         </Button>
       )}
     </Flex>

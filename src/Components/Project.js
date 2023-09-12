@@ -27,7 +27,6 @@ const Project = () => {
             borderBottom="2px solid Black"
             fontSize={{ base: "2rem", md: "4rem" }}
             mx={{ base: "1rem", md: "3rem" }}
-            // px="0"
           >
             {project?.name}
           </Heading>
