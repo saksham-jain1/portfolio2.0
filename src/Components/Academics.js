@@ -22,7 +22,8 @@ const Academics = () => {
       display="flex"
       flexDir="column"
       flexWrap="wrap"
-      p="3rem"
+      px={{ base: "1rem", md: "3rem" }}
+      py="3rem"
     >
       <Heading
         mb={{ base: "0", md: "0", lg: "5rem" }}
@@ -48,10 +49,10 @@ const Academics = () => {
             contentStyle={
               colorMode === "dark"
                 ? {
-                    boxShadow: "0 0px 15px #fff",
+                    boxShadow: "0 0px 10px #fff",
                     color: "#000",
                   }
-                : { boxShadow: "0 0px 30px #000", color: "#000" }
+                : { boxShadow: "0 0px 10px #000", color: "#000" }
             }
             dateClassName={colorMode === "dark" ? "dark" : ""}
             contentArrowStyle={

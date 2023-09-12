@@ -5,11 +5,14 @@ import { ChakraProvider } from "@chakra-ui/react";
 import "./index.css";
 import { ColorModeScript } from "@chakra-ui/react";
 import theme from "./theme";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <ChakraProvider>
+  <BrowserRouter>
+    <ChakraProvider>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <App />
-  </ChakraProvider>
+    </ChakraProvider>
+  </BrowserRouter>
 );

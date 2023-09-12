@@ -20,7 +20,8 @@ const Experience = () => {
       display="flex"
       flexDir="column"
       flexWrap="wrap"
-      p="3rem"
+      px={{base:"1rem",md:"3rem"}}
+      py="3rem"
     >
       <Heading
         mb={{ base: "0", md: "0", lg: "5rem" }}
@@ -47,9 +48,10 @@ const Experience = () => {
               colorMode === "dark"
                 ? {
                     color: "black",
+                    boxShadow: "0 0px 10px #fff",
                   }
                 : {
-                    boxShadow: "0 0px 30px #000",
+                    boxShadow: "0 0px 10px #000",
                   }
             }
             dateClassName={colorMode === "dark" ? "dark" : ""}
@@ -70,7 +72,7 @@ const Experience = () => {
             <h4 className="vertical-timeline-element-subtitle">{curr.place}</h4>
             <p id="description">
               {curr.detail.map((i) => {
-                return <li>{i}</li>;
+                return <li key={i}>{i}</li>;
               })}
             </p>
             <p>
@@ -83,6 +85,7 @@ const Experience = () => {
                     px="3"
                     variant="solid"
                     colorScheme="whatsapp"
+                    key={i}
                   >
                     {i}
                   </Tag>

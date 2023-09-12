@@ -1,3 +1,10 @@
+import chatApp from "../assets/chatApp.png";
+import Banking from "../assets/Banking.png";
+import PharmacyProject from "../assets/PharmacyProject.png";
+import portfollio from "../assets/portfollio.png";
+import weatherApp from "../assets/weatherApp.png";
+import todoApp from "../assets/todoApp.png";
+
 const data = {
   name: "",
   about: "",
@@ -78,6 +85,133 @@ const data = {
       ],
       Tag: ["Php", "SQL", "Javascript"],
       date: "July-2021 - Aug-2021",
+    },
+  ],
+  projects: [
+    {
+      name: "Chatting WebApp",
+      detail:
+        "A user-friendly chatting platform. Users can effortlessly login, sign-up, and engage in real-time conversations.",
+      link1: "https://github.com/saksham-jain1/Mern-Chat-App",
+      link2: "https://chatting-app-0.herokuapp.com",
+      tech: ["MERN Stack", "Chakra-Ui", "Socket.io", "JWT"],
+      status: "completed",
+      img: chatApp,
+    },
+    {
+      name: "My Portfollio",
+      detail:
+        "The website showcases my professional work and enables visitors to easily connect with me.",
+      link1: "https://github.com/saksham-jain1/Portfollio",
+      link2: "https://my-portfollio.herokuapp.com/",
+      tech: ["MERN Stack", "Chakra-Ui"],
+      status: "completed",
+      img: portfollio,
+    },
+    {
+      name: "Pharmacy Website",
+      detail:
+        "A simple Ecommerce Website for Medicines which has 3 types of user: buyer, seller, admin with different permissions and usage. Here a user can buy medicine consult a Dr. and much more. This is created using HTML/CSS, Bootstap, JS, PHP, MySql, SMTP server",
+      link1: "https://github.com/saksham-jain1/pharmacy_management.github.io",
+      link2: "",
+      status: "completed",
+      img: PharmacyProject,
+    },
+    {
+      name: "Banking Website",
+      detail:
+        "A Basic Banking Website created during sparks foundation internship. A user can create account in this and can do money transfer. This created using HTML/CSS, JS, BootStrap, PHP, MySql.",
+      link1: "https://github.com/saksham-jain1/Banking-Website.github.io",
+      link2: "",
+      status: "completed",
+      img: Banking,
+    },
+    {
+      name: "Todo App",
+      detail:
+        "A clone of Trello Web app where a user can manage day to day tasks, can make multiple lists of Cards, edit tasks, drag from one list to another. And all the data will be stored locally. This is created with Reactjs, Chakra-Ui, React DND",
+      link1: "https://github.com/saksham-jain1/todo-list",
+      link2: "https://todo-list-011.herokuapp.com/",
+      status: "completed",
+      img: todoApp,
+    },
+    {
+      name: "Weather App",
+      detail:
+        "A simple Weather WebApp which shows hourly and weakly weather data forecast using OpenWeather API. This is created using Reactjs, Chakra-Ui, OpenWeather API.",
+      link1: "https://github.com/saksham-jain1/WeatherWebApp",
+      link2: "https://weather-web-app-rosy.vercel.app/",
+      status: "completed",
+      img: weatherApp,
+    },
+    {
+      name: "Movie Recomendation System",
+      detail: "",
+      link1: "#",
+      link2: "",
+      status: "ongoing",
+      img: "",
+    },
+    {
+      name: "Basic Photo Editor",
+      detail: "",
+      link1: "#",
+      link2: "",
+      status: "ongoing",
+      img: "",
+    },
+    {
+      name: "Discord App Clone",
+      detail: "",
+      link1: "#",
+      link2: "",
+      status: "ongoing",
+      img: "",
+    },
+  ],
+  skills: [
+    {
+      title: "Languages",
+      data: [
+        "C",
+        "C++",
+        "Java",
+        "Python",
+        "HTML/CSS",
+        "JavaScript",
+        "PHP",
+        "SQL",
+      ],
+    },
+    {
+      title: "Frameworks/Libraries",
+      data: [
+        "ReactJS",
+        "NodeJS",
+        "ExpressJS",
+        "REACT Native",
+        "Chakra-Ui",
+        "Material-Ui",
+        "Bootstrap",
+      ],
+    },
+    {
+      title: "Tools",
+      data: ["Git", "GitHub", "VsCode", "Heroku", "Postman"],
+    },
+    {
+      title: "Databases",
+      data: ["MySql", "MongoDB"],
+    },
+    {
+      title: "Others",
+      data: [
+        "Database Management",
+        "Data Structures & Algorithms",
+        "Object Oriented Programming",
+        "Operating System",
+        "Compitetive Programming",
+      ],
     },
   ],
 };

@@ -30,7 +30,7 @@ const About = () => {
         textAlign="justify"
         fontSize="1.2rem"
       >
-        <Text my="5">
+        <Box my="5">
           I'm a versatile software developer with a passion for web technologies
           and problem-solving. Here's what sets me apart:
           <br />
@@ -73,7 +73,7 @@ const About = () => {
             defines your career."
             <br />
           </p>
-        </Text>
+        </Box>
       </Box>
     </Flex>
   );

@@ -4,7 +4,6 @@ import {
   Button,
   Flex,
   Text,
-  Tooltip,
   useColorMode,
 } from "@chakra-ui/react";
 import React from "react";
@@ -37,17 +36,13 @@ const Navbar = ({ percentage }) => {
           <Avatar size="md" src={logo} />
           <Text fontFamily="'cursive','Times New Roman'"> Saksham Jain </Text>
         </Box>
-        <Tooltip
-          label={`Toggle to ${colorMode === "light" ? "Dark" : "Light"} Mode`}
-        >
-          <Button onClick={toggleColorMode} id="toggle">
-            {colorMode === "dark" ? (
-              <BsSunFill size={"24px"} color="#ECC94B" />
-            ) : (
-              <BsFillMoonStarsFill size={"24px"} color="#805AD5" />
-            )}
-          </Button>
-        </Tooltip>
+        <Button onClick={toggleColorMode} id="toggle">
+          {colorMode === "dark" ? (
+            <BsSunFill size={"24px"} color="#ECC94B" />
+          ) : (
+            <BsFillMoonStarsFill size={"24px"} color="#805AD5" />
+          )}
+        </Button>
       </Flex>
     </Box>
   );
