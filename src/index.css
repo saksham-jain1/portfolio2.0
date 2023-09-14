@@ -3,6 +3,17 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
+  cursor: none !important  ;
+}
+.cursor,
+.cursor > div {
+  backdrop-filter: invert(0.8);
+}
+
+@media (hover: none) {
+  .cursor {
+    display: none !important;
+  }
 }
 
 body {
@@ -71,12 +82,6 @@ html {
   padding: 5px 0px;
 }
 
-
-.active {
-  font-weight: bold;
-  color: #e93d9b;
-}
-
 .waving {
   display: inline-block;
   color: #000000;
@@ -119,13 +124,15 @@ html {
     transform: rotate(0deg);
   }
 }
+
+
 #quote {
   position: relative;
   width: max-content;
   max-width: 100%;
 }
 #quote::after {
-  content: "~ Carlton Fisk";
+  content: attr(author);
   position: absolute;
   right: 0px;
 }
@@ -140,5 +147,6 @@ html {
   }
 }
 
-
-
+.cursor + button:hover {
+  scale: 2;
+}

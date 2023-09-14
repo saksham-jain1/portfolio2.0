@@ -1,7 +1,7 @@
 import "./App.css";
 import { Box } from "@chakra-ui/react";
 import Navbar from "./Components/Navbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Sidebar from "./Components/Sidebar";
 import Home from "./Components/Home";
 import About from "./Components/About";
@@ -11,6 +11,7 @@ import { Route, Routes } from "react-router-dom";
 import Project from "./Components/Project";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
+import Cursor from "./Components/Cursor";
 
 function App() {
   const [percentage, setPercentage] = useState(0);
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <Box w="100vw" position="relative">
+      <Cursor />
       <Navbar percentage={percentage} />
       <Sidebar />
       <Box ml="60px" mt="80px" w="calc(100vw - 60px)" minH="100vh">

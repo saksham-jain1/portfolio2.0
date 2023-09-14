@@ -4,15 +4,9 @@ import Lottie from "lottie-react";
 import Resume from "../assets/Sakshams Resume.pdf";
 import developerAnimation from "../assets/developer.json";
 import Typewriter from "typewriter-effect";
+import data from "../data/data.js";
 
 const Home = () => {
-  const textLines = [
-    "<b>Software Developer</b>",
-    "<b>Web Developer</b>",
-    "<b>Competitive Coder</b>",
-    "<b>Problem Solver</b>",
-  ];
-
   return (
     <Flex
       alignItems="center"
@@ -31,13 +25,13 @@ const Home = () => {
       <Heading fontWeight="light" fontSize={{ base: "2rem", md: "3rem" }}>
         I'm
         <Text fontWeight="extrabold" as="span" color="purple.600" px="2">
-          Saksham Jain
+          {data.name}
         </Text>
       </Heading>
       <Text fontSize={{ base: "1.5rem", md: "2rem" }}>
         <Typewriter
           options={{
-            strings: textLines,
+            strings: data.descriptions,
             autoStart: true,
             loop: true,
             delay: 90,

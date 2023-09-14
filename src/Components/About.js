@@ -1,7 +1,8 @@
-import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading } from "@chakra-ui/react";
 import React from "react";
 import Lottie from "lottie-react";
 import aboutAnimation from "../assets/about.json";
+import data from "../data/data.js";
 
 const About = () => {
   return (
@@ -31,33 +32,18 @@ const About = () => {
         fontSize="1.2rem"
       >
         <Box my="5">
-          I'm a versatile software developer with a passion for web technologies
-          and problem-solving. Here's what sets me apart:
+          {data.about.para}
           <br />
           <br />
-          <b>✨ Innovative Solutions:</b> I create web applications that bring
-          ideas to life, leveraging the latest technologies to craft innovative
-          solutions.
-          <hr />
-          <br />
-          <b>🌟 Challenges Excite Me:</b> I thrive on tackling complex
-          challenges head-on, turning them into opportunities for growth.
-          <hr />
-          <br />
-          <b>🚀 Continuous Learner:</b> I'm always eager to learn and grow,
-          staying up-to-date with industry trends and emerging technologies.
-          <hr />
-          <br />
-          <b>🌐 Full-Stack Expertise:</b> My skills span the entire web
-          development stack, from frontend design to backend logic and
-          databases.
-          <hr />
-          <br />
-          <b>🏆 Achievements:</b> I've achieved a top college rank, solved over
-          500 coding questions, and scored in the top percentile in JEE Mains.
-          <hr />
-          <br />
-          <br />
+          {data.about.list.map((i, ind) => {
+            return (
+              <Box key={ind}>
+                {i}
+                <hr />
+                <br />
+              </Box>
+            );
+          })}
           Explore my portfolio to see my work and get in touch if you'd like to
           collaborate!
           <br />
@@ -68,11 +54,16 @@ const About = () => {
           </a>
           <br />
           <br />
-          <p id="quote" style={{ fontStyle: "oblique" }}>
-            "It's not what you achieve, it's what you overcome. That's what
-            defines your career."
-            <br />
-          </p>
+          {data.about.quote && (
+            <p
+              id="quote"
+              author={"~ " + data.about.quote.author}
+              style={{ fontStyle: "oblique" }}
+            >
+              "{data.about.quote.quote}"
+              <br />
+            </p>
+          )}
         </Box>
       </Box>
     </Flex>
