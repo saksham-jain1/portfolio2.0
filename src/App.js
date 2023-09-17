@@ -9,13 +9,13 @@ import About from "./Components/About";
 import Academics from "./Components/Academics";
 import Experience from "./Components/Experience";
 import { Route, Routes } from "react-router-dom";
-import Project from "./Components/Project";
-import Projects from "./Components/Projects";
-import Skills from "./Components/Skills";
-import Cursor from "./Components/Cursor";
-import Certificates from "./Components/Certificates";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
+const Project = React.lazy(() => import("./Components/Project"));
+const Projects = React.lazy(() => import("./Components/Projects"));
+// const Skills = React.lazy(() => import("./Components/Skills"));
+const Cursor = React.lazy(() => import("./Components/Cursor/Cursor"));
+const Certificates = React.lazy(() => import("./Components/Certificates"));
+const Contact = React.lazy(() => import("./Components/Contact"));
+const Footer = React.lazy(() => import("./Components/Footer"));
 
 function App() {
   const [percentage, setPercentage] = useState(0);
@@ -46,7 +46,7 @@ function App() {
                   <Experience />
                   <Academics />
                   <Projects limit={6} />
-                  <Skills />
+                  {/* <Skills /> */}
                   <Certificates />
                   <Contact />
                 </React.Suspense>

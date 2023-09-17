@@ -1,9 +1,8 @@
 import { Box } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-
+import "./Cursor.css";
 const Cursor = () => {
   const [pos, setPos] = useState({ x: -100, y: -100 });
-
   useEffect(() => {
     window.addEventListener("mousemove", (e) => {
       setPos({ x: e.pageX, y: e.pageY - 80 });
