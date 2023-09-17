@@ -33,10 +33,10 @@ const Navbar = ({ percentage }) => {
           cursor="pointer"
           onClick={() => window.scrollTo(0, 0)}
         >
-          <Avatar size="md" src={logo} />
+          <Avatar name="Saksham Jain" size="md" src={logo} />
           <Text fontFamily="'cursive','Times New Roman'"> Saksham Jain </Text>
         </Box>
-        <Button onClick={toggleColorMode} id="toggle">
+        <Button aria-label="color mode toggle" onClick={toggleColorMode} id="toggle">
           {colorMode === "dark" ? (
             <BsSunFill size={"24px"} color="#ECC94B" />
           ) : (

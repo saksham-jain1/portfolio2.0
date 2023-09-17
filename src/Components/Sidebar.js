@@ -4,11 +4,11 @@ import {
   IoHomeOutline,
   IoPersonCircleOutline,
   IoRocketOutline,
-  IoTrophyOutline,
 } from "react-icons/io5";
 import { FaGraduationCap, FaTools } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { MdContactMail } from "react-icons/md";
+import { PiCertificate } from "react-icons/pi";
 
 const Sidebar = () => {
   const { colorMode } = useColorMode();
@@ -28,15 +28,15 @@ const Sidebar = () => {
       id="sidebar"
       zIndex="10"
     >
-      <a href="/#home">
+      <a aria-label="navigation links" href="/#home">
         <Icon as={IoHomeOutline} boxSize={7} w="50px" ml="3px" />
         <span>Home</span>
       </a>
-      <a href="/#about">
+      <a aria-label="navigation links" href="/#about">
         <Icon as={IoPersonCircleOutline} boxSize={7} w="50px" ml="3px" />
         <span>About</span>
       </a>
-      <a href="/#experince">
+      <a aria-label="navigation links" href="/#experince">
         <Icon
           as={AiOutlineFundProjectionScreen}
           boxSize={7}
@@ -45,23 +45,23 @@ const Sidebar = () => {
         />
         <span>Experience</span>
       </a>
-      <a href="/#academics">
+      <a aria-label="navigation links" href="/#academics">
         <Icon as={FaGraduationCap} boxSize={7} w="50px" ml="3px" />
         <span>Academics</span>
       </a>
-      <a href="/#projects">
+      <a aria-label="navigation links" href="/#projects">
         <Icon as={IoRocketOutline} boxSize={7} w="50px" ml="3px" />
         <span>Projects</span>
       </a>
-      <a href="/#skills">
+      <a aria-label="navigation links" href="/#skills">
         <Icon as={FaTools} boxSize={7} w="50px" ml="3px" />
         <span>Skills</span>
       </a>
-      <a href="/#achievements">
-        <Icon as={IoTrophyOutline} boxSize={7} w="50px" ml="3px" />
-        <span>Achivements</span>
+      <a aria-label="navigation links" href="/#achievements">
+        <Icon as={PiCertificate} boxSize={7} w="50px" ml="3px" />
+        <span>Certificates</span>
       </a>
-      <a href="/#contact">
+      <a aria-label="navigation links" href="/#contact">
         <Icon as={MdContactMail} boxSize={7} w="50px" ml="3px" />
         <span>Contact Me</span>
       </a>

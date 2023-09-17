@@ -1,7 +1,7 @@
 import "./App.css";
 import { Box } from "@chakra-ui/react";
 import Navbar from "./Components/Navbar";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Sidebar from "./Components/Sidebar";
 import Home from "./Components/Home";
 import About from "./Components/About";
@@ -12,6 +12,9 @@ import Project from "./Components/Project";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import Cursor from "./Components/Cursor";
+import Certificates from "./Components/Certificates";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   const [percentage, setPercentage] = useState(0);
@@ -42,12 +45,15 @@ function App() {
                 <Academics />
                 <Projects limit={6} />
                 <Skills />
+                <Certificates />
+                <Contact />
               </>
             }
           />
           <Route path="/project/:id" element={<Project />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
+        <Footer />
       </Box>
     </Box>
   );

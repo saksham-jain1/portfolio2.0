@@ -113,6 +113,7 @@ const data = {
   // todo need to update project data.
   projects: [
     {
+      id:"9",
       name: "Chatting WebApp",
       detail:
         "A user-friendly chatting platform. Users can effortlessly login, sign-up, and engage in real-time conversations.",
@@ -123,6 +124,7 @@ const data = {
       img: chatApp,
     },
     {
+      id:"8",
       name: "My Portfollio",
       detail:
         "The website showcases my professional work and enables visitors to easily connect with me.",
@@ -133,6 +135,7 @@ const data = {
       img: portfollio,
     },
     {
+      id:"7",
       name: "Pharmacy Website",
       detail:
         "A simple Ecommerce Website for Medicines which has 3 types of user: buyer, seller, admin with different permissions and usage. Here a user can buy medicine consult a Dr. and much more. This is created using HTML/CSS, Bootstap, JS, PHP, MySql, SMTP server",
@@ -142,6 +145,7 @@ const data = {
       img: PharmacyProject,
     },
     {
+      id:"6",
       name: "Banking Website",
       detail:
         "A Basic Banking Website created during sparks foundation internship. A user can create account in this and can do money transfer. This created using HTML/CSS, JS, BootStrap, PHP, MySql.",
@@ -151,6 +155,7 @@ const data = {
       img: Banking,
     },
     {
+      id:"5",
       name: "Todo App",
       detail:
         "A clone of Trello Web app where a user can manage day to day tasks, can make multiple lists of Cards, edit tasks, drag from one list to another. And all the data will be stored locally. This is created with Reactjs, Chakra-Ui, React DND",
@@ -160,6 +165,7 @@ const data = {
       img: todoApp,
     },
     {
+      id:"4",
       name: "Weather App",
       detail:
         "A simple Weather WebApp which shows hourly and weakly weather data forecast using OpenWeather API. This is created using Reactjs, Chakra-Ui, OpenWeather API.",
@@ -169,6 +175,7 @@ const data = {
       img: weatherApp,
     },
     {
+      id:"3",
       name: "Movie Recomendation System",
       detail: "",
       link1: "#",
@@ -177,6 +184,7 @@ const data = {
       img: "",
     },
     {
+      id:"2",
       name: "Basic Photo Editor",
       detail: "",
       link1: "#",
@@ -185,6 +193,7 @@ const data = {
       img: "",
     },
     {
+      id:"1",
       name: "Discord App Clone",
       detail: "",
       link1: "#",
@@ -233,7 +242,7 @@ const data = {
       ],
     },
     {
-      title: "Frameworks/Libraries",
+      title: "Frameworks / Libraries",
       data: [
         {
           title: "ReactJS",
@@ -340,6 +349,8 @@ const data = {
       ],
     },
   ],
+
+  certificates: [],
 };
 
 export default data;

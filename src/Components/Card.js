@@ -31,7 +31,7 @@ const Card = ({ data, id }) => {
       flexDirection="column"
     >
       <Box p="3">
-        <Image src={data.img} alt={data.name} borderRadius="xl" />
+        <Image loading="lazy" src={data.img} alt={data.name} borderRadius="xl" />
       </Box>
 
       <Box w="100%" flex="1" position="relative">
@@ -55,7 +55,7 @@ const Card = ({ data, id }) => {
           <Flex gap="2" wrap="wrap">
             {data.tech?.map((i) => {
               return (
-                <Tag key={i} variant="solid" colorScheme="green">
+                <Tag key={i} variant="solid" colorScheme="whatsapp">
                   {i}
                 </Tag>
               );

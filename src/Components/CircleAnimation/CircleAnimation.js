@@ -1,6 +1,6 @@
 import React from "react";
 import "./CircleAnimation.css";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 
 const CircleAnimation = ({ title, data, n }) => {
   return (
@@ -27,12 +27,11 @@ const CircleAnimation = ({ title, data, n }) => {
               animationDuration: `${n + 3}s`,
             }}
           >
-            <img src={link} alt={title} />
+            <Image loading="lazy" src={link} alt={title} />
           </Box>
         );
       })}
       <Text
-        fontSize="1.3rem"
         position="absolute"
         top="56%"
         bg="black"

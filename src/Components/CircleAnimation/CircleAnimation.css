@@ -23,6 +23,12 @@
   justify-content: center;
 }
 
+.container > p {
+  max-width: var(--k);
+  font-size: large;
+  text-align: center;
+}
+
 .circle {
   width: var(--j);
   height: var(--j);
@@ -54,11 +60,11 @@
 
 .circle::after {
   content: attr(val);
-
+  text-align: center;
   position: absolute;
   top: 100%;
   font-weight: 400;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .circle > img {
