@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import { Box } from "@chakra-ui/react";
 import Navbar from "./Components/Navbar";
 import { useState } from "react";
@@ -40,13 +41,15 @@ function App() {
             element={
               <>
                 <Home />
-                <About />
-                <Experience />
-                <Academics />
-                <Projects limit={6} />
-                <Skills />
-                <Certificates />
-                <Contact />
+                <React.Suspense fallback="Loadig....">
+                  <About />
+                  <Experience />
+                  <Academics />
+                  <Projects limit={6} />
+                  <Skills />
+                  <Certificates />
+                  <Contact />
+                </React.Suspense>
               </>
             }
           />
