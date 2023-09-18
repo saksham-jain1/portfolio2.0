@@ -78,6 +78,8 @@ const Contact = () => {
         alignItems="center"
         justifyContent="center"
         p="2rem"
+        bg="blackAlpha.400"
+        borderRadius="2xl"
       >
         {!loading ? (
           <form

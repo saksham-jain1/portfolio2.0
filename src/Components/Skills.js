@@ -1,7 +1,5 @@
-import { Box, Flex, Heading, Tag } from "@chakra-ui/react";
+import { Box, Flex, Heading } from "@chakra-ui/react";
 import React from "react";
-import Lottie from "lottie-react";
-import animationData from "../assets/developer1.json";
 import data from "../data/data.js";
 import CircleAnimation from "./CircleAnimation/CircleAnimation";
 

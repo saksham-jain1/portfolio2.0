@@ -1,4 +1,4 @@
-import { Box, Heading, Tag, useColorMode } from "@chakra-ui/react";
+import { Box, Heading, Link, Tag, useColorMode } from "@chakra-ui/react";
 import React from "react";
 import Lottie from "lottie-react";
 import {
@@ -8,6 +8,7 @@ import {
 import animationData from "../assets/developer3.json";
 import { MdWork } from "react-icons/md";
 import data from "../data/data.js";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Experience = () => {
   const { colorMode } = useColorMode();
@@ -20,7 +21,7 @@ const Experience = () => {
       display="flex"
       flexDir="column"
       flexWrap="wrap"
-      px={{base:"1rem",md:"3rem"}}
+      px={{ base: "1rem", md: "3rem" }}
       py="3rem"
     >
       <Heading
@@ -68,7 +69,23 @@ const Experience = () => {
             }}
             icon={<MdWork />}
           >
-            <h3 className="vertical-timeline-element-title">{curr.degree}</h3>
+            <h3 className="vertical-timeline-element-title">
+              {curr.degree}
+              {curr.link && (
+                <Link
+                  href={curr.link}
+                  style={{
+                    fontSize: "1.2rem",
+                    background: "skyblue",
+                    padding: "0 7px",
+                    margin: "0 0 0 10px",
+                    borderRadius: "50%",
+                  }}
+                >
+                  &#x2139;
+                </Link>
+              )}
+            </h3>
             <h4 className="vertical-timeline-element-subtitle">{curr.place}</h4>
             <p id="description">
               {curr.detail.map((i) => {

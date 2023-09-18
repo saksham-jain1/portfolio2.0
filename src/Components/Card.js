@@ -4,6 +4,7 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
   Tag,
   useColorMode,
 } from "@chakra-ui/react";
@@ -30,9 +31,13 @@ const Card = ({ data, id }) => {
       border="1px"
       flexDirection="column"
     >
-      <Box p="3">
-        <Image loading="lazy" src={data.img} alt={data.name} borderRadius="xl" />
-      </Box>
+      <Image
+        p="3"
+        loading="lazy"
+        src={data.img}
+        alt={data.name}
+        borderRadius="xl"
+      />
 
       <Box w="100%" flex="1" position="relative">
         <Heading
@@ -71,18 +76,14 @@ const Card = ({ data, id }) => {
         borderRadius="xl"
         gap="3"
       >
-        <a href={data.link1}>
-          <Button colorScheme="teal">
-            <BsGithub />
-            &nbsp; Source Code
-          </Button>
-        </a>
+        <Button as={Link} isExternal href={data.link1} colorScheme="teal">
+          <BsGithub />
+          &nbsp; Source Code
+        </Button>
         {data.link2 && (
-          <a href={data.link2}>
-            <Button colorScheme="teal">
+            <Button as={Link} isExternal href={data.link2} colorScheme="teal">
               <BiLinkExternal /> &nbsp; Live
             </Button>
-          </a>
         )}
         <Button
           w="100%"

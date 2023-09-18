@@ -4,6 +4,40 @@ import PharmacyProject from "../assets/PharmacyProject.png";
 import portfollio from "../assets/portfollio.png";
 import weatherApp from "../assets/weatherApp.png";
 import todoApp from "../assets/todoApp.png";
+import c from "../assets/c.png";
+import cpp from "../assets/c++.png";
+import java from "../assets/java.png";
+import python from "../assets/python.png";
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import js from "../assets/js.png";
+import php from "../assets/php.png";
+
+import react from "../assets/react.png";
+import next from "../assets/next.png";
+import express from "../assets/express.png";
+import node from "../assets/node.png";
+import three from "../assets/three.png";
+import chakraui from "../assets/chakra-ui.jpg";
+import mui from "../assets/mui.png";
+import spring from "../assets/spring-boot.png";
+import bootstrap from "../assets/bootstrap.png";
+
+import mongodb from "../assets/mongodb.png";
+import mysql from "../assets/mysql.png";
+import postman from "../assets/postman.png";
+import vercel from "../assets/vercel.svg";
+import vscode from "../assets/vscode.png";
+import github from "../assets/github.png";
+import git from "../assets/git.png";
+
+import dsa from "../assets/dsa.png";
+import dbms from "../assets/dbms.jpg";
+import os from "../assets/os.webp";
+import cs from "../assets/cs.png";
+import cn from "../assets/cn.png";
+import aiml from "../assets/aiml.png";
+import oops from "../assets/oops.webp";
 
 const data = {
   name: "Saksham Jain",
@@ -113,7 +147,7 @@ const data = {
   // todo need to update project data.
   projects: [
     {
-      id:"9",
+      id: "9",
       name: "Chatting WebApp",
       detail:
         "A user-friendly chatting platform. Users can effortlessly login, sign-up, and engage in real-time conversations.",
@@ -124,7 +158,7 @@ const data = {
       img: chatApp,
     },
     {
-      id:"8",
+      id: "8",
       name: "My Portfollio",
       detail:
         "The website showcases my professional work and enables visitors to easily connect with me.",
@@ -135,7 +169,7 @@ const data = {
       img: portfollio,
     },
     {
-      id:"7",
+      id: "7",
       name: "Pharmacy Website",
       detail:
         "A simple Ecommerce Website for Medicines which has 3 types of user: buyer, seller, admin with different permissions and usage. Here a user can buy medicine consult a Dr. and much more. This is created using HTML/CSS, Bootstap, JS, PHP, MySql, SMTP server",
@@ -145,7 +179,7 @@ const data = {
       img: PharmacyProject,
     },
     {
-      id:"6",
+      id: "6",
       name: "Banking Website",
       detail:
         "A Basic Banking Website created during sparks foundation internship. A user can create account in this and can do money transfer. This created using HTML/CSS, JS, BootStrap, PHP, MySql.",
@@ -155,7 +189,7 @@ const data = {
       img: Banking,
     },
     {
-      id:"5",
+      id: "5",
       name: "Todo App",
       detail:
         "A clone of Trello Web app where a user can manage day to day tasks, can make multiple lists of Cards, edit tasks, drag from one list to another. And all the data will be stored locally. This is created with Reactjs, Chakra-Ui, React DND",
@@ -165,7 +199,7 @@ const data = {
       img: todoApp,
     },
     {
-      id:"4",
+      id: "4",
       name: "Weather App",
       detail:
         "A simple Weather WebApp which shows hourly and weakly weather data forecast using OpenWeather API. This is created using Reactjs, Chakra-Ui, OpenWeather API.",
@@ -175,7 +209,7 @@ const data = {
       img: weatherApp,
     },
     {
-      id:"3",
+      id: "3",
       name: "Movie Recomendation System",
       detail: "",
       link1: "#",
@@ -184,7 +218,7 @@ const data = {
       img: "",
     },
     {
-      id:"2",
+      id: "2",
       name: "Basic Photo Editor",
       detail: "",
       link1: "#",
@@ -193,7 +227,7 @@ const data = {
       img: "",
     },
     {
-      id:"1",
+      id: "1",
       name: "Discord App Clone",
       detail: "",
       link1: "#",
@@ -209,35 +243,35 @@ const data = {
       data: [
         {
           title: "C",
-          link: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png",
+          link: c,
         },
         {
           title: "C++",
-          link: "https://w7.pngwing.com/pngs/46/626/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue.png",
+          link: cpp,
         },
         {
           title: "Java",
-          link: "https://camo.githubusercontent.com/59b291dfb2a7c3243b471bad3b55906fdf8e59e0372e6247f48de1e5215e5475/68747470733a2f2f636f6465687573746c65722e6f72672f77702d636f6e74656e742f75706c6f6164732f323031322f31322f6a6176615f6c6f676f2e706e67",
+          link: java,
         },
         {
           title: "Python",
-          link: "https://www.pinclipart.com/picdir/middle/269-2691398_python-logo-clipart-transparent-background-png-download.png",
+          link: python,
         },
         {
           title: "HTML",
-          link: "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png",
+          link: html,
         },
         {
           title: "CSS",
-          link: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png",
+          link: css,
         },
         {
           title: "Javascript",
-          link: "https://www.pinclipart.com/picdir/middle/407-4073505_javascript-programming-language-logo-png-clipart.png",
+          link: js,
         },
         {
           title: "PHP",
-          link: "https://cdn-icons-png.flaticon.com/512/5968/5968332.png",
+          link: php,
         },
       ],
     },
@@ -246,43 +280,43 @@ const data = {
       data: [
         {
           title: "ReactJS",
-          link: "https://icon2.cleanpng.com/20191103/ho/transparent-js-icon-logo-icon-react-icon-5dbea1da3071a5.5168401015727743621985.jpg",
+          link: react,
         },
         {
           title: "NodeJS",
-          link: "https://p7.hiclipart.com/preview/306/37/167/node-js-javascript-web-application-express-js-computer-software-others.jpg",
+          link: node,
         },
         {
           title: "ExpressJS",
-          link: "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png",
+          link: express,
         },
         {
           title: "Nextjs",
-          link: "https://d2nir1j4sou8ez.cloudfront.net/wp-content/uploads/2021/12/nextjs-boilerplate-logo.png",
+          link: next,
         },
         {
           title: "Threejs",
-          link: "https://img.stackshare.io/service/5883/preview.png",
+          link: three,
         },
         {
           title: "React Native",
-          link: "https://icon2.cleanpng.com/20191103/ho/transparent-js-icon-logo-icon-react-icon-5dbea1da3071a5.5168401015727743621985.jpg",
+          link: react,
         },
         {
           title: "Chakra-Ui",
-          link: "https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg",
+          link: chakraui,
         },
         {
           title: "Material-Ui",
-          link: "https://v4.material-ui.com/static/logo.png",
+          link: mui,
         },
         {
           title: "Bootstrap",
-          link: "https://camo.githubusercontent.com/2512b49c89512f2ff3718f7257f48ed5c46a4e331abbd890b6c5e8c0e458434f/68747470733a2f2f676574626f6f7473747261702e636f6d2f646f63732f352e322f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67",
+          link: bootstrap,
         },
         {
           title: "Spring Boot",
-          link: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/54/4ed1d02bfe11e9b16e4738100f1cb7/logo-java-spring-boot-cloud_.jpg?auto=format%2Ccompress&dpr=1",
+          link: spring,
         },
       ],
     },
@@ -291,31 +325,31 @@ const data = {
       data: [
         {
           title: "Git",
-          link: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+          link: git,
         },
         {
           title: "GitHub",
-          link: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+          link: github,
         },
         {
           title: "VsCode",
-          link: "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png",
+          link: vscode,
         },
         {
           title: "Vercel",
-          link: "https://static.wikia.nocookie.net/logopedia/images/a/a7/Vercel_favicon.svg",
+          link: vercel,
         },
         {
           title: "Postman",
-          link: "https://www.svgrepo.com/show/354202/postman-icon.svg",
+          link: postman,
         },
         {
           title: "MySql",
-          link: "https://cdn4.iconfinder.com/data/icons/logos-3/181/MySQL-512.png",
+          link: mysql,
         },
         {
           title: "MongoDB",
-          link: "https://toppng.com/uploads/preview/mongo-db-design-mongodb-logo-mongodb-11562879783bwj2cknalk.png",
+          link: mongodb,
         },
       ],
     },
@@ -324,33 +358,73 @@ const data = {
       data: [
         {
           title: "DB Management",
-          link: "https://static.javatpoint.com/fullformpages/images/dbms-full-form2.png",
+          link: dbms,
         },
         {
           title: "DSA",
-          link: "https://miro.medium.com/v2/resize:fit:1400/0*7AHKqhGVaDWZJ1L_.png",
+          link: dsa,
         },
         {
           title: "OOP's",
-          link: "https://cdn1.vectorstock.com/i/1000x1000/77/50/oop-letters-vector-8757750.jpg",
+          link: oops,
         },
         {
           title: "Operating System",
-          link: "https://www.sitesbay.com/os/images/what-is-operating-system.jpg",
+          link: os,
         },
         {
           title: "AI / ML",
-          link: "https://cdn-icons-png.flaticon.com/512/8618/8618881.png",
+          link: aiml,
         },
         {
           title: "Cloud Security",
-          link: "https://www.pngitem.com/pimgs/m/544-5442942_cloud-security-icon-twitter-png-transparent-png.png",
+          link: cs,
+        },
+        {
+          title: "Computer Networking",
+          link: cn,
         },
       ],
     },
   ],
 
-  certificates: [],
+  certificates: [
+    {
+      title: "Java Programming: Solving Problems with Software",
+      img: "https://drive.google.com/file/d/1-zfwwgq5c03dAapUQn_XNgCP1EO4PQGa/view?usp=sharing",
+    },
+    { title: "Databases for Developers: Next Level", img: "" },
+    {
+      title: "HTML, CSS, and JavaScript for Web Developers",
+      img: "",
+    },
+    {
+      title: "Programming for Everybody",
+      img: "",
+    },
+    {
+      title: "CCNAv7: Introduction to Networks",
+      img: "",
+    },
+    {
+      title: "Introduction to Packet Tracer",
+      img: "",
+    },
+  ],
+
+  links: {
+    linkedin: "",
+    github: "",
+    gfg: "",
+    codechef: "",
+    codeforces: "",
+    mail: "",
+    whatsapp: "",
+  },
 };
+
+const projectDetail = [{}];
+
+export { projectDetail };
 
 export default data;

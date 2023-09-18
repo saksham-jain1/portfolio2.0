@@ -1,3 +1,14 @@
 * {
   cursor: none;
 }
+
+.cursor,
+.cursor > div {
+  backdrop-filter: invert(0.8);
+}
+
+@media (hover: none) {
+  .cursor {
+    display: none !important;
+  }
+}

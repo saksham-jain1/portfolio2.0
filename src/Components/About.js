@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Link } from "@chakra-ui/react";
 import React from "react";
 import Lottie from "lottie-react";
 import aboutAnimation from "../assets/about.json";
@@ -33,27 +33,28 @@ const About = () => {
       >
         <Box my="5">
           {data.about.para}
-          <br />
-          <br />
           {data.about.list.map((i, ind) => {
             return (
-              <Box key={ind}>
+              <Box my="7" borderBottom="2px solid" key={ind}>
                 {i}
-                <hr />
-                <br />
               </Box>
             );
           })}
           Explore my portfolio to see my work and get in touch if you'd like to
           collaborate!
-          <br />
-          <a href="#contact">
-            <Button mt="1rem" colorScheme="yellow" p="1.4rem" fontSize="1.6rem">
-              Contact Me
-            </Button>
-          </a>
-          <br />
-          <br />
+          <Button
+            as={Link}
+            mt="1rem"
+            mb="1.5rem"
+            colorScheme="yellow"
+            fontSize="1.6rem"
+            display="block"
+            py="1.5"
+            w="max-content"
+            href="#contact"
+          >
+            Contact Me
+          </Button>
           {data.about.quote && (
             <p
               id="quote"
@@ -61,7 +62,6 @@ const About = () => {
               style={{ fontStyle: "oblique" }}
             >
               "{data.about.quote.quote}"
-              <br />
             </p>
           )}
         </Box>

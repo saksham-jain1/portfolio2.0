@@ -11,7 +11,7 @@ import Experience from "./Components/Experience";
 import { Route, Routes } from "react-router-dom";
 const Project = React.lazy(() => import("./Components/Project"));
 const Projects = React.lazy(() => import("./Components/Projects"));
-// const Skills = React.lazy(() => import("./Components/Skills"));
+const Skills = React.lazy(() => import("./Components/Skills"));
 const Cursor = React.lazy(() => import("./Components/Cursor/Cursor"));
 const Certificates = React.lazy(() => import("./Components/Certificates"));
 const Contact = React.lazy(() => import("./Components/Contact"));
@@ -46,7 +46,7 @@ function App() {
                   <Experience />
                   <Academics />
                   <Projects limit={6} />
-                  {/* <Skills /> */}
+                  <Skills />
                   <Certificates />
                   <Contact />
                 </React.Suspense>

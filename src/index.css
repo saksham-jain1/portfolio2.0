@@ -4,41 +4,28 @@
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
 }
-.cursor,
-.cursor > div {
-  backdrop-filter: invert(0.8);
-}
-
-@media (hover: none) {
-  .cursor {
-    display: none !important;
-  }
-}
-
 body {
   overflow-x: hidden;
 }
-
 html {
   scroll-behavior: smooth;
 }
 
+a,button{
+  cursor: pointer !important;
+}
 ::-webkit-scrollbar {
   width: 0px;
 }
-
 .progress {
   background-image: linear-gradient(90deg, #e93d9b 0%, #486ed7 99%);
 }
-
 #toggle {
   display: block;
 }
-
 #toggle:active > svg {
   animation: toggle 0.3s ease;
 }
-
 @keyframes toggle {
   0% {
     transform: rotate(0deg);
@@ -47,7 +34,6 @@ html {
     transform: rotate(720deg);
   }
 }
-
 #sidebar > a > span {
   display: none;
   font-size: 1.1rem;
@@ -56,31 +42,26 @@ html {
   overflow: hidden;
   width: 0px;
 }
-
 #sidebar > a > svg {
   align-items: center;
 }
-
 #sidebar:hover > a > span,
 #sidebar > a:active > span {
   width: 160px;
   display: inline;
 }
-
 #sidebar:hover > a:hover,
 #sidebar > a:active:hover {
   border-bottom: 2px solid #486ed7;
   margin: 0px 10px;
   color: #486ed7;
 }
-
 #sidebar > a {
   cursor: pointer;
   display: flex;
   align-items: center;
   padding: 5px 0px;
 }
-
 .waving {
   display: inline-block;
   color: #000000;
@@ -89,7 +70,6 @@ html {
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
 }
-
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
@@ -123,8 +103,6 @@ html {
     transform: rotate(0deg);
   }
 }
-
-
 #quote {
   position: relative;
   width: max-content;
@@ -134,18 +112,17 @@ html {
   content: attr(author);
   position: absolute;
   right: 0px;
+  top: 1.5rem;
 }
 
 .dark {
   color: white;
 }
-
 @media (max-width: 48em) {
   .dark {
     color: black;
   }
 }
-
 .cursor + button:hover {
   scale: 2;
 }

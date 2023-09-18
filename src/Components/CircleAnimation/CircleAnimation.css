@@ -1,11 +1,11 @@
-* {
+:root {
   --i: 160px;
   --j: 70px;
   --k: 200px;
 }
 
 @media only screen and (max-width: 600px) {
-  * {
+  :root {
     --i: 130px;
     --j: 50px;
     --k: 150px;
@@ -46,7 +46,8 @@
 }
 
 @keyframes rotating {
-  0% {
+  0%,
+  100% {
     transform: translate(-50%, -50%) rotate(0deg) translateX(var(--i))
       rotate(0deg);
     visibility: visible;
@@ -71,6 +72,7 @@
   border-radius: 50%;
   height: 100%;
   width: 100%;
+  aspect-ratio: 1;
 }
 
 .globe-container {

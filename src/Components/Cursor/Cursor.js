@@ -1,24 +1,28 @@
 import { Box } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import "./Cursor.css";
+
 const Cursor = () => {
   const [pos, setPos] = useState({ x: -100, y: -100 });
+
   useEffect(() => {
-    window.addEventListener("mousemove", (e) => {
+    const handleMouseMove = (e) => {
       setPos({ x: e.pageX, y: e.pageY - 80 });
-    });
-    window.addEventListener("mouseout", (e) => {
+    };
+
+    const handleMouseOut = () => {
       setPos({ x: -100, y: -100 });
-    });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mouseout", handleMouseOut);
+
     return () => {
-      window.removeEventListener("mousemove", (e) =>
-        setPos({ x: e.pageX, y: e.pageY - 80 })
-      );
-      window.removeEventListener("mouseout", (e) => {
-        setPos({ x: -100, y: -100 });
-      });
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseout", handleMouseOut);
     };
   }, []);
+
   return (
     <Box
       className="cursor"
@@ -34,15 +38,9 @@ const Cursor = () => {
       alignItems="center"
       top={pos.y}
       left={pos.x}
-      transform="translate(-50%,-50%)"
+      transform="translate(-50%, -50%)"
     >
-      <Box
-        h="6px"
-        w="6px"
-        mixBlendMode="difference"
-        borderRadius="full"
-        bg="black"
-      ></Box>
+      <Box h="6px" w="6px" borderRadius="full" bg="black"></Box>
     </Box>
   );
 };

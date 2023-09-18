@@ -5,8 +5,8 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { GrCertificate } from "react-icons/gr";
-import { FaGraduationCap } from "react-icons/fa";
-import { Box, Heading, useColorMode } from "@chakra-ui/react";
+import { FaExternalLinkAlt, FaGraduationCap } from "react-icons/fa";
+import { Box, Heading, Link, useColorMode } from "@chakra-ui/react";
 import Lottie from "lottie-react";
 import animationData from "../assets/book-loading.json";
 import data from "../data/data.js";
@@ -36,8 +36,10 @@ const Academics = () => {
       </Heading>
       <Box
         position={{ base: "relative", md: "relative", lg: "absolute" }}
-        top="-3rem"
         right="3rem"
+        top="-3rem"
+        maxW="90%"
+        w="600px"
       >
         <Lottie animationData={animationData} />
       </Box>
@@ -69,7 +71,23 @@ const Academics = () => {
             }}
             icon={curr.icon ? <FaGraduationCap /> : <GrCertificate />}
           >
-            <h3 className="vertical-timeline-element-title">{curr.degree}</h3>
+            <h3 className="vertical-timeline-element-title">
+              {curr.degree}
+              {curr.link && (
+                <Link
+                  href={curr.link}
+                  style={{
+                    fontSize: "1.2rem",
+                    background: "skyblue",
+                    padding: "0 7px",
+                    margin: "0 0 0 10px",
+                    borderRadius: "50%",
+                  }}
+                >
+                  &#x2139;
+                </Link>
+              )}
+            </h3>
             <h4 className="vertical-timeline-element-subtitle">{curr.place}</h4>
             <p id="description">{curr.detail}</p>
           </VerticalTimelineElement>
