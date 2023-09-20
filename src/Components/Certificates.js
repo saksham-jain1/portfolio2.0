@@ -1,6 +1,16 @@
-import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Icon,
+  Image,
+  Link,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
 import data from "../data/data.js";
+import { IoArrowForwardCircle } from "react-icons/io5";
 
 const Certificates = () => {
   return (
@@ -25,7 +35,16 @@ const Certificates = () => {
       </Heading>
       {data.certificates.map((i, ind) => {
         return (
-          <Box position="relative" m="3" w="300px" maxW="90%" key={ind}>
+          <Box
+            as={Link}
+            href={i.link}
+            isExternal
+            position="relative"
+            m="3"
+            w="300px"
+            maxW="90%"
+            key={ind}
+          >
             <Image
               w="300px"
               h="200px"
@@ -52,8 +71,17 @@ const Certificates = () => {
           </Box>
         );
       })}
-      <Button mt="4" w="90%" colorScheme="yellow">
-        All Certificates
+      <Button
+        as={Link}
+        mt="4"
+        w="90%"
+        colorScheme="yellow"
+        isExternal
+        href={data.certificatesLink}
+        size="lg"
+        gap="5"
+      >
+        All Certificates <Icon as={IoArrowForwardCircle} boxSize={8} />
       </Button>
     </Flex>
   );

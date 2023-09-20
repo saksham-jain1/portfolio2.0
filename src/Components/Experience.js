@@ -8,7 +8,6 @@ import {
 import animationData from "../assets/developer3.json";
 import { MdWork } from "react-icons/md";
 import data from "../data/data.js";
-import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Experience = () => {
   const { colorMode } = useColorMode();
@@ -81,6 +80,7 @@ const Experience = () => {
                     margin: "0 0 0 10px",
                     borderRadius: "50%",
                   }}
+                  isExternal
                 >
                   &#x2139;
                 </Link>
@@ -101,7 +101,7 @@ const Experience = () => {
                     my="1"
                     px="3"
                     variant="solid"
-                    colorScheme="whatsapp"
+                    colorScheme="green"
                     key={i}
                   >
                     {i}

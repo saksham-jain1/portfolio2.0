@@ -5,17 +5,18 @@ import Navbar from "./Components/Navbar";
 import { useState } from "react";
 import Sidebar from "./Components/Sidebar";
 import Home from "./Components/Home";
-import About from "./Components/About";
-import Academics from "./Components/Academics";
-import Experience from "./Components/Experience";
 import { Route, Routes } from "react-router-dom";
-const Project = React.lazy(() => import("./Components/Project"));
+import Project from "./Components/Project";
+import Cursor from "./Components/Cursor/Cursor";
+import Footer from "./Components/Footer";
+
+const About = React.lazy(() => import("./Components/About"));
+const Academics = React.lazy(() => import("./Components/Academics"));
+const Experience = React.lazy(() => import("./Components/Experience"));
 const Projects = React.lazy(() => import("./Components/Projects"));
 const Skills = React.lazy(() => import("./Components/Skills"));
-const Cursor = React.lazy(() => import("./Components/Cursor/Cursor"));
 const Certificates = React.lazy(() => import("./Components/Certificates"));
 const Contact = React.lazy(() => import("./Components/Contact"));
-const Footer = React.lazy(() => import("./Components/Footer"));
 
 function App() {
   const [percentage, setPercentage] = useState(0);
@@ -54,7 +55,14 @@ function App() {
             }
           />
           <Route path="/project/:id" element={<Project />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route
+            path="/projects"
+            element={
+              <React.Suspense fallback="Loading....">
+                <Projects />
+              </React.Suspense>
+            }
+          />
         </Routes>
         <Footer />
       </Box>

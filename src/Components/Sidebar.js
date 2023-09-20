@@ -57,7 +57,7 @@ const Sidebar = () => {
         <Icon as={FaTools} boxSize={7} w="50px" ml="3px" />
         <span>Skills</span>
       </a>
-      <a aria-label="navigation links" href="/#achievements">
+      <a aria-label="navigation links" href="/#certificates">
         <Icon as={PiCertificate} boxSize={7} w="50px" ml="3px" />
         <span>Certificates</span>
       </a>

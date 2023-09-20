@@ -5,7 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { GrCertificate } from "react-icons/gr";
-import { FaExternalLinkAlt, FaGraduationCap } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa";
 import { Box, Heading, Link, useColorMode } from "@chakra-ui/react";
 import Lottie from "lottie-react";
 import animationData from "../assets/book-loading.json";
@@ -83,6 +83,7 @@ const Academics = () => {
                     margin: "0 0 0 10px",
                     borderRadius: "50%",
                   }}
+                  isExternal
                 >
                   &#x2139;
                 </Link>

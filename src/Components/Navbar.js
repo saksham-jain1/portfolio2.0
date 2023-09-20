@@ -7,7 +7,7 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import React from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.webp";
 import { BsFillMoonStarsFill, BsSunFill } from "react-icons/bs";
 
 const Navbar = ({ percentage }) => {

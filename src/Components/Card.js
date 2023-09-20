@@ -14,7 +14,7 @@ import { BsGithub } from "react-icons/bs";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
-const Card = ({ data, id }) => {
+const Card = ({ data }) => {
   const { colorMode } = useColorMode();
   const navigate = useNavigate();
   return (
@@ -43,7 +43,7 @@ const Card = ({ data, id }) => {
         <Heading
           fontSize={{ base: "1.5rem", md: "2rem" }}
           textAlign="center"
-          color="blackAlpha.700"
+          color="blackAlpha.800"
         >
           {data.name}
         </Heading>
@@ -60,7 +60,7 @@ const Card = ({ data, id }) => {
           <Flex gap="2" wrap="wrap">
             {data.tech?.map((i) => {
               return (
-                <Tag key={i} variant="solid" colorScheme="whatsapp">
+                <Tag key={i} variant="solid" colorScheme="green">
                   {i}
                 </Tag>
               );
@@ -81,9 +81,9 @@ const Card = ({ data, id }) => {
           &nbsp; Source Code
         </Button>
         {data.link2 && (
-            <Button as={Link} isExternal href={data.link2} colorScheme="teal">
-              <BiLinkExternal /> &nbsp; Live
-            </Button>
+          <Button as={Link} isExternal href={data.link2} colorScheme="teal">
+            <BiLinkExternal /> &nbsp; Live
+          </Button>
         )}
         <Button
           w="100%"
@@ -92,7 +92,7 @@ const Card = ({ data, id }) => {
           borderRadius="xl"
           onClick={() => {
             window.scrollTo(0, 0);
-            navigate(`/project/${id}`);
+            navigate(`/project/${data.id}`);
           }}
         >
           Read More <IoInformationCircleOutline size="26px" />

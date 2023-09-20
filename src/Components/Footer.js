@@ -3,8 +3,10 @@ import React from "react";
 import {
   SiCodechef,
   SiCodeforces,
+  SiCodingninjas,
   SiGeeksforgeeks,
   SiGithub,
+  SiLeetcode,
   SiLinkedin,
   SiWhatsapp,
 } from "react-icons/si";
@@ -26,48 +28,46 @@ const Footer = () => {
         maxW="400px"
         m="auto"
       >
-        <Link
-          isExternal
-          boxSize={10}
-          as={SiLinkedin}
-          href={data.links.linkedin}
-        />
-        <Link boxSize={10} as={SiGithub} isExternal href={data.links.github} />
+        <Link aria-label="footer links" isExternal href={data.links.linkedin}>
+          <SiLinkedin size={36} />
+        </Link>
+        <Link aria-label="footer links" isExternal href={data.links.github}>
+          <SiGithub size={36} />
+        </Link>
 
-        <Link
-          boxSize={10}
-          as={SiGeeksforgeeks}
-          isExternal
-          href={data.links.gfg}
-        />
+        <Link aria-label="footer links" isExternal href={data.links.gfg}>
+          <SiGeeksforgeeks size={36} />
+        </Link>
 
-        <Link
-          boxSize={10}
-          as={SiCodechef}
-          isExternal
-          href={data.links.codechef}
-        />
+        <Link aria-label="footer links" isExternal href={data.links.codechef}>
+          <SiCodechef size={36} />
+        </Link>
 
-        <Link
-          boxSize={10}
-          as={SiCodeforces}
-          isExternal
-          href={data.links.codeforces}
-        />
-
-        <Link
-          isExternal
-          style={{ fontSize: "36px", fontWeight: "bolder" }}
-          href={data.links.mail}
-        >
-          &#x40;
+        <Link aria-label="footer links" isExternal href={data.links.codeforces}>
+          <SiCodeforces size={36} />
+        </Link>
+        <Link aria-label="footer links" isExternal href={data.links.leetcode}>
+          <SiLeetcode size={36} />
         </Link>
         <Link
-          boxSize={10}
-          as={SiWhatsapp}
+          aria-label="footer links"
           isExternal
-          href={data.links.whatsapp}
-        />
+          href={data.links.codingninjas}
+        >
+          <SiCodingninjas size={36} />
+        </Link>
+
+        <Link
+          aria-label="footer links"
+          isExternal
+          style={{ fontSize: "36px", fontWeight: "bolder" }}
+          href={data.links.email}
+        >
+          @
+        </Link>
+        <Link aria-label="footer links" isExternal href={data.links.green}>
+          <SiWhatsapp size={36} />
+        </Link>
       </Flex>
       <Text w="100%" textAlign="center" pt="5" borderTop="2px solid">
         ©2023 | Copyright. All Right Reserved

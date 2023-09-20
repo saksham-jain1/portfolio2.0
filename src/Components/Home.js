@@ -48,7 +48,7 @@ const Home = () => {
         justifyContent="center"
       >
         <a href={Resume} download="Saksham's Resume">
-          <Button mt="1rem" colorScheme="whatsapp" p="1.4rem" fontSize="1.6rem">
+          <Button mt="1rem" colorScheme="green" p="1.4rem" fontSize="1.6rem">
             Resume
           </Button>
         </a>
