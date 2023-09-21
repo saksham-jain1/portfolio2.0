@@ -11,7 +11,8 @@ html {
   scroll-behavior: smooth;
 }
 
-a,button{
+a,
+button {
   cursor: pointer !important;
 }
 ::-webkit-scrollbar {
@@ -20,6 +21,7 @@ a,button{
 .progress {
   background-image: linear-gradient(90deg, #e93d9b 0%, #486ed7 99%);
 }
+
 #toggle {
   display: block;
 }

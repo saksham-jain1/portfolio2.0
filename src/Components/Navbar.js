@@ -7,7 +7,7 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import React from "react";
-import logo from "../assets/logo.webp";
+import logo from "../assets/logo.png";
 import { BsFillMoonStarsFill, BsSunFill } from "react-icons/bs";
 
 const Navbar = ({ percentage }) => {
@@ -36,7 +36,11 @@ const Navbar = ({ percentage }) => {
           <Avatar name="Saksham Jain" size="md" src={logo} />
           <Text fontFamily="'cursive','Times New Roman'"> Saksham Jain </Text>
         </Box>
-        <Button aria-label="color mode toggle" onClick={toggleColorMode} id="toggle">
+        <Button
+          aria-label="color mode toggle"
+          onClick={toggleColorMode}
+          id="toggle"
+        >
           {colorMode === "dark" ? (
             <BsSunFill size={"24px"} color="#ECC94B" />
           ) : (

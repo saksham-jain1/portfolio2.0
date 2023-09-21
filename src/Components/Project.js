@@ -100,8 +100,12 @@ const Project = () => {
               Features:
             </Heading>
             <OrderedList px={{ base: "5", md: "12" }}>
-              {project?.features?.map((i) => {
-                return <ListItem m="3">{i}</ListItem>;
+              {project?.features?.map((i, id) => {
+                return (
+                  <ListItem m="3" key={id}>
+                    {i}
+                  </ListItem>
+                );
               })}
             </OrderedList>
             <Heading
@@ -112,9 +116,15 @@ const Project = () => {
               Technology Used:
             </Heading>
             <Box px={{ base: "5", md: "12" }}>
-              {project?.tech?.map((i) => {
+              {project?.tech?.map((i, id) => {
                 return (
-                  <Tag variant="solid" m="3" size="lg" colorScheme="green">
+                  <Tag
+                    key={id}
+                    variant="solid"
+                    m="3"
+                    size="lg"
+                    colorScheme="green"
+                  >
                     {i}
                   </Tag>
                 );

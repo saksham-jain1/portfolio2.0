@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { IoArrowForwardCircle } from "react-icons/io5";
 
 const Projects = ({ limit }) => {
-  const [selector, setSelector] = useState("featured");
+  const [selector, setSelector] = useState(limit ? "featured" : "all");
   const [projectDetails, setProjectDetails] = useState([]);
   const navigate = useNavigate();
 
@@ -16,6 +16,8 @@ const Projects = ({ limit }) => {
       setProjectDetails(
         projectDetail.filter((i) => i.type.includes(selector)).slice(0, limit)
       );
+    else if (selector !== "all")
+      setProjectDetails(projectDetail.filter((i) => i.type.includes(selector)));
     else setProjectDetails(projectDetail);
   }, [limit, selector]);
 
@@ -78,7 +80,7 @@ const Projects = ({ limit }) => {
           Android
         </Tag>
       </Flex>
-      <Flex wrap="wrap" gap="1rem" w="100%" justifyContent="space-evenly">
+      <Flex wrap="wrap" gap="2rem" px="5" w="100%" justifyContent="space-evenly">
         {projectDetails.map((curr) => {
           return <Card key={curr.id} data={curr} />;
         })}

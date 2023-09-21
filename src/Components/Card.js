@@ -6,6 +6,7 @@ import {
   Image,
   Link,
   Tag,
+  Text,
   useColorMode,
 } from "@chakra-ui/react";
 import React from "react";
@@ -18,87 +19,81 @@ const Card = ({ data }) => {
   const { colorMode } = useColorMode();
   const navigate = useNavigate();
   return (
-    <Flex
-      h="500px"
-      w="400px"
-      maxW="calc(90vw - 60px - 1rem)"
-      bg="whiteAlpha.900"
+    <Box
+      h="450px"
+      w="300px"
+      bg="white"
       borderRadius="xl"
       my="1rem"
       boxShadow={
-        colorMode !== "light" ? "0px 0px 10px #fff" : "0px 0px 30px #000"
+        colorMode !== "light" ? "0px 0px 8px #fff" : "0px 0px 30px #000"
       }
       border="1px"
-      flexDirection="column"
     >
       <Image
-        p="3"
+        p="2"
         loading="lazy"
         src={data.img}
         alt={data.name}
         borderRadius="xl"
+        maxH="175px"
+        w="100%"
       />
-
-      <Box w="100%" flex="1" position="relative">
-        <Heading
-          fontSize={{ base: "1.5rem", md: "2rem" }}
-          textAlign="center"
-          color="blackAlpha.800"
-        >
+      <Flex
+        color="black"
+        direction="column"
+        h="270px"
+        px={{ base: "2", md: "3" }}
+      >
+        <Heading className="ellipse" fontSize="1.5rem" textAlign="center">
           {data.name}
         </Heading>
-        <Box
-          px="1rem"
-          fontSize="1rem"
-          textAlign="justify"
-          color="blackAlpha.900"
-        >
+        <Text flex="1">
           <b>Description: </b>
           {data.detail}
-          <br />
-          <b>Tech Used:</b>
-          <Flex gap="2" wrap="wrap">
-            {data.tech?.map((i) => {
-              return (
-                <Tag key={i} variant="solid" colorScheme="green">
-                  {i}
-                </Tag>
-              );
-            })}
-          </Flex>
-        </Box>
-      </Box>
-      <Box
-        w="100%"
-        display="flex"
-        flexWrap="wrap"
-        justifyContent="space-evenly"
-        borderRadius="xl"
-        gap="3"
-      >
-        <Button as={Link} isExternal href={data.link1} colorScheme="teal">
-          <BsGithub />
-          &nbsp; Source Code
-        </Button>
-        {data.link2 && (
-          <Button as={Link} isExternal href={data.link2} colorScheme="teal">
-            <BiLinkExternal /> &nbsp; Live
+        </Text>
+        <b style={{ marginTop: "2",flex:1 }}>
+          Tech-Used:
+          {data.tech?.map((i) => {
+            return (
+              <Tag
+                mx="1"
+                my="0.5"
+                key={i}
+                variant="solid"
+                size="md"
+                colorScheme="green"
+              >
+                {i}
+              </Tag>
+            );
+          })}
+        </b>
+        <Flex flexWrap="wrap" mt="1" justifyContent="space-evenly" gap="1.5">
+          <Button as={Link} isExternal href={data.link1} colorScheme="teal">
+            <BsGithub />
+            &nbsp; Source Code
           </Button>
-        )}
-        <Button
-          w="100%"
-          gap="3"
-          colorScheme="blue"
-          borderRadius="xl"
-          onClick={() => {
-            window.scrollTo(0, 0);
-            navigate(`/project/${data.id}`);
-          }}
-        >
-          Read More <IoInformationCircleOutline size="26px" />
-        </Button>
-      </Box>
-    </Flex>
+          {data.link2 && (
+            <Button as={Link} isExternal href={data.link2} colorScheme="teal">
+              <BiLinkExternal /> &nbsp; Live
+            </Button>
+          )}
+          <Button
+            w="100%"
+            gap="3"
+            colorScheme="blue"
+            borderRadius="xl"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              navigate(`/project/${data.id}`);
+            }}
+          >
+            Read More <IoInformationCircleOutline size="24px" />
+          </Button>
+        </Flex>
+      </Flex>
+    </Box>
   );
 };
 

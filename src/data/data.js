@@ -1,10 +1,3 @@
-import chatApp from "../assets/chatApp.webp";
-import Banking from "../assets/Banking.webp";
-import PharmacyProject from "../assets/PharmacyProject.webp";
-import portfollio from "../assets/portfollio.webp";
-import weatherApp from "../assets/weatherApp.webp";
-import todoApp from "../assets/todoApp.webp";
-
 import c from "../assets/c.webp";
 import cpp from "../assets/cpp.webp";
 import java from "../assets/java.webp";
@@ -369,14 +362,7 @@ const projectDetail = [
       "Airbnb Clone is a cutting-edge vacation rental platform with a modern design & advance features, designed to showcase my web development skills.",
     link1: "",
     link2: "",
-    tech: [
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Cloudinary CDN",
-      "Node.js",
-      "TypeScript",
-    ],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Cloudinary"],
     status: "in progress",
     type: ["web", "featured"],
     features: [
@@ -398,9 +384,9 @@ const projectDetail = [
     id: "14",
     name: "Resume Builder",
     detail:
-      "Create stunning resumes effortlessly with the Resume Builder. Built with React.js, HTML, and modular CSS, it offers a user-friendly interface to craft the perfect resume.",
-    link1: "",
-    link2: "",
+      "Create stunning resumes effortlessly with the Resume Builder.It offers a user-friendly interface to craft the perfect resume.",
+    link1: "https://github.com/saksham-jain1/resume-builder",
+    link2: "https://resume-builder-nu-coral.vercel.app/",
     tech: ["React.js", "HTML", "Modular CSS"],
     status: "Complete",
     type: ["web"],
@@ -415,15 +401,15 @@ const projectDetail = [
       "The Resume Builder is your go-to tool for creating polished resumes effortlessly. Powered by React.js, it offers a seamless interface for filling out essential information, arranging sections with drag-and-drop simplicity, and choosing from a range of stylish color themes. Once you're satisfied with your resume, download or print it with ease. Experience the elegance of resume creation with our user-friendly design.",
     futureScope:
       "In the future, we plan to enhance the Resume Builder with additional templates, real-time collaboration features, and integration with popular job search platforms. Stay tuned for more updates!",
-    img: "https://resumebuilder.example.com/assets/cover-image.jpg",
+    img: require("../assets/resume-builder.webp"),
   },
   {
     id: "13",
-    name: "Namaste Stays Hotel Management System",
+    name: "Hotel Management System",
     detail:
-      "A full-stack hotel management system developed during my internship at Principle Global.",
-    link1: "https://namastestays.example.com",
-    link2: "https://github.com/namastestays",
+      "A full-stack hotel management system developed during my internship at PGS.",
+    link1: "https://github.com/saksham-jain1/hms",
+    link2: "",
     tech: ["Spring Boot", "Java", "React", "Chakra UI", "MySQL"],
     status: "Complete",
     type: ["web", "featured"],
@@ -445,15 +431,15 @@ const projectDetail = [
       "Namaste Stays is a cutting-edge hotel management system that simplifies hotel operations. With support for multiple languages, an elegant design, and responsive layout, it caters to a diverse user base. Users can enjoy the convenience of email confirmation, OTP verification, and secure transactions. The system also provides hotel owners with essential insights through dashboards, offers bill generation, and efficient hotel management capabilities. Experience the future of hotel management with Namaste Stays.",
     futureScope:
       "In the future, we plan to expand Namaste Stays by adding real-time booking features, room availability management, and even more customization options for hotel owners. Stay tuned for further updates!",
-    img: "https://namastestays.example.com/assets/cover-image.jpg",
+    img: require("../assets/hms.webp"),
   },
   {
     id: "12",
     name: "Basic Minecraft",
     detail:
       "A web-based game offering a simplified Minecraft experience in first-person view (FPV).",
-    link1: "",
-    link2: "",
+    link1: "https://github.com/saksham-jain1/Minecraft",
+    link2: "https://minecraft-bay.vercel.app/",
     tech: ["React.js", "Three.js"],
     status: "Complete",
     type: ["web", "game", "featured"],
@@ -466,15 +452,36 @@ const projectDetail = [
       "Basic Minecraft is a web-based game that offers a simplified Minecraft experience. In FPV mode, you can explore a blocky world, jump to new heights, and let your creativity run wild by placing blocks to build structures. It's a unique gaming experience that brings the essence of Minecraft to your web browser.",
     futureScope:
       "In the future, we plan to expand Basic Minecraft by adding more building materials, crafting options, and multiplayer support. Stay tuned for exciting updates!",
-    img: "https://basicminecraft.example.com/assets/cover-image.jpg",
+    img: require("../assets/minecraft.webp"),
+  },
+  // todo add other projects. check all links. deploy remaning projects
+  {
+    id: "9",
+    name: "To-Do List",
+    detail:
+      "A simple and intuitive To-Do List web application built using React.js.",
+    link1: "https://github.com/saksham-jain1/to-do",
+    link2: "https://to-do-sage-ten.vercel.app/",
+    tech: ["React.js"],
+    status: "Complete",
+    type: ["web"],
+    features: [
+      "Create, edit, and delete tasks.",
+      "Mark tasks as completed.",
+      "Responsive design for use on various devices.",
+    ],
+    description:
+      "The To-Do List is a straightforward web application that helps you organize your tasks. You can easily create, edit, and delete tasks, as well as mark them as completed. The app's responsive design ensures a seamless experience on different devices.",
+    futureScope: "",
+    img: require("../assets/todo.webp"),
   },
   {
     id: "8",
     name: "Pharmacy Store Helper",
     detail:
       "A MERN-based web app simplifying pharmacy store management with a database of 30,000+ medicines.",
-    link1: "https://pharmacystorehelper.example.com",
-    link2: "https://github.com/pharmacystorehelper",
+    link1: "https://github.com/saksham-jain1/pharmacy-store-frontend",
+    link2: "https://pharmacy-store-frontend.vercel.app/",
     tech: ["MERN stack", "Axios", "Cloudinary", "JWT"],
     status: "in progress",
     type: ["web", "featured"],
@@ -491,7 +498,7 @@ const projectDetail = [
       "Pharmacy Store Helper is your ultimate solution for pharmacy store management. With a vast database of over 30,000 medicines, users can create shop accounts, customize font sizes, manage stock, generate purchase orders with shareable links and PDFs, handle sales with bill generation, and keep track of the shop's ledger. The integration of JWT ensures secure access and data protection.",
     futureScope:
       "In the future, we plan to enhance Pharmacy Store Helper by adding real-time inventory updates, predictive stock recommendations, and integration with external pharmacy databases. Stay tuned for more exciting features!",
-    img: "https://pharmacystorehelper.example.com/assets/cover-image.jpg",
+    img: require("../assets/pharmacy-helper.webp"),
   },
   {
     id: "7",
@@ -499,7 +506,7 @@ const projectDetail = [
     detail:
       "A user-friendly chatting platform that offers real-time conversations, group chats, personal chats, and more.",
     link1: "https://github.com/saksham-jain1/Mern-Chat-App",
-    link2: "https://chatting-app-0.herokuapp.com",
+    link2: "",
     tech: ["MERN Stack", "Chakra-UI", "Socket.io", "JWT"],
     status: "Complete",
     type: ["web", "featured"],
@@ -517,7 +524,7 @@ const projectDetail = [
       "The Chatting WebApp is a full-fledged chat platform built with the MERN stack, featuring a user-friendly interface and a range of communication options. Users can enjoy group chats, personal conversations, and efficient user management. With the power of JWT, your conversations are secure and private. Express yourself with built-in emojis and switch to dark mode for a comfortable chat experience.",
     futureScope:
       "In the future, we plan to enhance the Chatting WebApp by adding multimedia sharing, voice and video calling, and additional security features to ensure a comprehensive and secure communication platform.",
-    img: chatApp,
+    img: require("../assets/chatApp.webp"),
   },
   // * reviwe this
   {
@@ -526,14 +533,14 @@ const projectDetail = [
     detail:
       "The website showcases my professional work and enables visitors to easily connect with me.",
     link1: "https://github.com/saksham-jain1/Portfollio",
-    link2: "https://my-portfollio.herokuapp.com/",
+    link2: "https://portfolio-chi-smoky-63.vercel.app/",
     tech: ["MERN Stack", "Chakra-Ui"],
     status: "Complete",
     type: ["web"],
     features: [],
     description: "",
     futureScope: "",
-    img: portfollio,
+    img: require("../assets/portfollio.webp"),
   },
   {
     id: "5",
@@ -542,7 +549,7 @@ const projectDetail = [
       "Ecommerce Website for Medicines with user types: buyer, seller, and admin.",
     link1: "https://github.com/saksham-jain1/pharmacy_management.github.io",
     link2: "",
-    tech: ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "MySQL", "SMTP server"],
+    tech: ["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "MySQL"],
     status: "Complete",
     type: ["web"],
     features: [
@@ -554,16 +561,15 @@ const projectDetail = [
     description:
       "ePharmacy Store is a simple e-commerce platform for buying medicines. It caters to buyers, sellers, and admins with different permissions. Users can purchase medicines and even consult with a doctor online. The project uses HTML, CSS, Bootstrap, JS, PHP, MySql, and an SMTP server for email functionalities.",
     futureScope: "",
-    img: PharmacyProject,
+    img: require("../assets/PharmacyProject.webp"),
   },
   {
     id: "4",
     name: "Banking Website",
-    detail:
-      "Basic Banking Website with account creation and money transfers. Developed using HTML, CSS, JS, Bootstrap, PHP, MySql.",
+    detail: "Basic Banking Website with account creation and money transfers.",
     link1: "https://github.com/saksham-jain1/Banking-Website.github.io",
     link2: "",
-    tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
+    tech: ["HTML", "CSS", "PHP", "JavaScript", "Bootstrap", "MySQL"],
     status: "Complete",
     type: ["web"],
     features: [
@@ -573,13 +579,13 @@ const projectDetail = [
     description:
       "The Banking Website is a basic online banking platform developed during the Sparks Foundation internship. Users can create accounts and perform money transfers. The project is built using HTML, CSS, JS, Bootstrap, PHP, and MySql.",
     futureScope: "",
-    img: Banking,
+    img: require("../assets/Banking.webp"),
   },
   {
     id: "3",
     name: "Trello Clone",
     detail:
-      "Clone of Trello Web app for task management. Create lists of cards, edit tasks, and drag tasks between lists. Built with React.js, Chakra-UI, React DND.",
+      "Clone of Trello Web app for task management. Create lists of cards, edit tasks, and drag tasks between lists.",
     link1: "https://github.com/saksham-jain1/todo-list",
     link2: "https://todo-list-011.herokuapp.com/",
     tech: ["MERN stack", "Chakra-UI", "React DND", "JWT"],
@@ -594,13 +600,13 @@ const projectDetail = [
     description:
       "Trello Clone is a web app that mimics the functionality of the Trello task management platform. Users can create lists of cards, edit tasks, and drag tasks between lists. Data is stored locally for easy access. The project is built with React.js, Chakra-UI, and React DND.",
     futureScope: "",
-    img: todoApp,
+    img: require("../assets/trello.webp"),
   },
   {
     id: "2",
     name: "Weather App",
     detail:
-      "Weather WebApp displaying hourly and weekly forecasts using OpenWeather API. Created with React.js, Chakra-UI, OpenWeather API.",
+      "Weather WebApp displaying hourly and weekly forecasts using OpenWeather API.",
     link1: "https://github.com/saksham-jain1/WeatherWebApp",
     link2: "https://weather-web-app-rosy.vercel.app/",
     tech: ["React.js", "Chakra-UI", "OpenWeather API"],
@@ -613,21 +619,21 @@ const projectDetail = [
     description:
       "The Weather App is a straightforward web application that provides hourly and weekly weather forecasts. It utilizes the OpenWeather API and is built with React.js and Chakra-UI.",
     futureScope: "",
-    img: weatherApp,
+    img: require("../assets/weatherApp.webp"),
   },
   {
     id: "1",
     name: "Basic Photo Editor",
     detail: "A basic photo editing web application.",
-    link1: "",
-    link2: "",
+    link1: "https://github.com/saksham-jain1/Image-Editor",
+    link2: "https://saksham-jain1.github.io/Image-Editor/",
     tech: ["HTML", "CSS", "JS"],
     status: "ongoing",
     type: ["web"],
     features: [],
     description: "",
     futureScope: "",
-    img: "",
+    img: require("../assets/img-editor.webp"),
   },
 ];
 
