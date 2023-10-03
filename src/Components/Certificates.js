@@ -51,7 +51,7 @@ const Certificates = () => {
               borderRadius="2xl"
               loading="lazy"
               src={i.img}
-              alt={i.title}
+              alt="certificate"
             />
             <Text
               textAlign="center"

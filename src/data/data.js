@@ -409,7 +409,7 @@ const projectDetail = [
     detail:
       "A full-stack hotel management system developed during my internship at PGS.",
     link1: "https://github.com/saksham-jain1/hms",
-    link2: "",
+    link2: "https://hotel-management-system-seven.vercel.app/",
     tech: ["Spring Boot", "Java", "React", "Chakra UI", "MySQL"],
     status: "Complete",
     type: ["web", "featured"],
@@ -548,7 +548,7 @@ const projectDetail = [
     detail:
       "Ecommerce Website for Medicines with user types: buyer, seller, and admin.",
     link1: "https://github.com/saksham-jain1/pharmacy_management.github.io",
-    link2: "",
+    link2: "https://epharmastore.000webhostapp.com/",
     tech: ["HTML", "CSS", "PHP", "Bootstrap", "JavaScript", "MySQL"],
     status: "Complete",
     type: ["web"],
@@ -568,7 +568,7 @@ const projectDetail = [
     name: "Banking Website",
     detail: "Basic Banking Website with account creation and money transfers.",
     link1: "https://github.com/saksham-jain1/Banking-Website.github.io",
-    link2: "",
+    link2: "https://gringotts-webs.000webhostapp.com/",
     tech: ["HTML", "CSS", "PHP", "JavaScript", "Bootstrap", "MySQL"],
     status: "Complete",
     type: ["web"],
